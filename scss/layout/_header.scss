@@ -1,0 +1,5 @@
+@use '../abstracts/' as *;
+
+h1 {
+  font-family: $title-font, sans-serif;
+}

@@ -72,6 +72,17 @@ select {
     scroll-behavior: auto !important;
   }
 }
+/* FONTS */
+/* COLORS */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
 /* Reset */
+/* Header */
 
 /*# sourceMappingURL=style.css.map */
