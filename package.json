@@ -1,0 +1,22 @@
+{
+  "name": "cyriltiger_3_06042021",
+  "version": "1.0.0",
+  "description": "Projet #3 OpenClassroom - Dynamisez une page web avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allandrow/CyrilTiger_3_06042021.git"
+  },
+  "author": "Cyril Tiger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Allandrow/CyrilTiger_3_06042021/issues"
+  },
+  "homepage": "https://github.com/Allandrow/CyrilTiger_3_06042021#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}
