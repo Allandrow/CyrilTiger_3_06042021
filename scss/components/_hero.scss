@@ -1,0 +1,23 @@
+@use '../abstracts/' as *;
+
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: $bg-light;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 3rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    border-radius: 2rem;
+    padding: 1rem;
+    color: $bg-base;
+  }
+}

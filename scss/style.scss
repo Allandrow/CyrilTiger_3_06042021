@@ -4,6 +4,7 @@
 /* Header */
 @use 'layout';
 
-/* Localisation */
+/* Components propre à la homepage */
 
 @use 'components/localisation' as *;
+@use 'components/hero' as *;

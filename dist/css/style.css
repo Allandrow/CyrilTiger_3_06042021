@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Box sizing rules */
 *,
 *::before,
@@ -34,7 +35,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 /* A elements that don't have a class get default styles */
@@ -116,8 +117,27 @@ header {
   width: 10rem;
 }
 
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #f2f2f2;
+}
+.hero h2 {
+  margin-bottom: 1rem;
+}
+.hero p {
+  margin-bottom: 3rem;
+}
+.hero__link {
+  text-decoration: none;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 2rem;
+  padding: 1rem;
+  color: #fff;
+}
+
 /* Reset */
 /* Header */
-/* Localisation */
+/* Components propre à la homepage */
 
 /*# sourceMappingURL=style.css.map */
