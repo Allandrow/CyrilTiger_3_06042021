@@ -129,7 +129,8 @@ header {
 .hero p {
   margin-bottom: 3rem;
 }
-.hero__link {
+
+.btn {
   text-decoration: none;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 2rem;
