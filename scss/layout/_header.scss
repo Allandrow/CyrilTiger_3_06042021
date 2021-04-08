@@ -1,5 +1,6 @@
-@use '../abstracts/' as *;
-
-h1 {
-  font-family: $title-font, sans-serif;
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
