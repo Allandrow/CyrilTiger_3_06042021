@@ -4,7 +4,7 @@
 /* Header */
 @use 'layout';
 
-/* Components propre à la homepage */
+/* Block de layout propre à la homepage */
 
-@use 'components/localisation' as *;
-@use 'components/hero' as *;
+@use 'layout/localisation' as *;
+@use 'layout/hero' as *;

@@ -104,6 +104,7 @@ header {
   position: relative;
 }
 
+/* N"INCLUT PAS DE BLOCS SPECIFIQUE A LA HOMEPAGE OU PAGE DE MENU*/
 .localisation {
   display: flex;
   justify-content: center;
@@ -138,6 +139,6 @@ header {
 
 /* Reset */
 /* Header */
-/* Components propre à la homepage */
+/* Block de layout propre à la homepage */
 
 /*# sourceMappingURL=style.css.map */
