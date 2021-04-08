@@ -74,8 +74,20 @@ select {
 }
 /* FONTS */
 /* COLORS */
+.localisation span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+::placeholder {
+  color: #000;
+  opacity: 1;
+  font-weight: 600;
 }
 
 h1 {
@@ -86,10 +98,26 @@ header {
   display: flex;
   justify-content: center;
   padding: 1rem 0;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: relative;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  background-color: #e6e6e6;
+  z-index: 1;
+  padding: 1rem 0;
+}
+.localisation span {
+  font-weight: 600;
+  margin-left: 1rem;
+  width: 10rem;
 }
 
 /* Reset */
 /* Header */
+/* Localisation */
 
 /*# sourceMappingURL=style.css.map */

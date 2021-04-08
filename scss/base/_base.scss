@@ -3,3 +3,9 @@
 body {
   font-family: $content-font, sans-serif;
 }
+
+::placeholder {
+  color: #000;
+  opacity: 1;
+  font-weight: 600;
+}
