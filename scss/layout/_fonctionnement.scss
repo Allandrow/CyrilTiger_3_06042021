@@ -10,6 +10,7 @@
       position: relative;
       display: flex;
       align-items: center;
+      padding: 1.5rem 0;
 
       &::before {
         counter-increment: card;
@@ -24,13 +25,16 @@
         position: absolute;
         left: -0.75rem;
         color: $bg-base;
-        font-weight: 400;
         font-size: 0.75rem;
       }
 
       i {
         padding: 0 1rem 0 1.75rem;
         color: lighten(#000, 30%);
+      }
+
+      span {
+        font-weight: 700;
       }
 
       &:last-of-type {

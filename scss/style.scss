@@ -5,9 +5,10 @@
 @use 'layout';
 
 /* Block de layout propre à la homepage */
-@use 'layout/localisation' as *;
-@use 'layout/hero' as *;
-@use 'layout/fonctionnement' as *;
+@use 'layout/localisation';
+@use 'layout/hero';
+@use 'layout/fonctionnement';
+@use 'layout/restaurants';
 
 /* Card */
-@use 'components' as *;
+@use 'components';

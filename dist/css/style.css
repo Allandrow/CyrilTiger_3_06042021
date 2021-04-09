@@ -85,6 +85,7 @@ select {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* BOUTONS AVEC DEGRADE DE COULEURS */
 .hero__link a {
   text-decoration: none;
 }
@@ -164,6 +165,7 @@ header {
   position: relative;
   display: flex;
   align-items: center;
+  padding: 1.5rem 0;
 }
 .fonctionnement .card-group__card::before {
   counter-increment: card;
@@ -178,18 +180,61 @@ header {
   position: absolute;
   left: -0.75rem;
   color: #fff;
-  font-weight: 400;
   font-size: 0.75rem;
 }
 .fonctionnement .card-group__card i {
   padding: 0 1rem 0 1.75rem;
   color: #4d4d4d;
 }
+.fonctionnement .card-group__card span {
+  font-weight: 700;
+}
 .fonctionnement .card-group__card:last-of-type {
   background-color: #f2eafb;
 }
 .fonctionnement .card-group__card:last-of-type i {
   color: #9356dc;
+}
+
+.restaurants {
+  background-color: #f2f2f2;
+}
+.restaurants .card-group__card__img {
+  height: 175px;
+  position: relative;
+}
+.restaurants .card-group__card__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.restaurants .card-group__card__img span {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background-color: #99e2d0;
+  padding: 0.5rem 0.75rem;
+  color: #278870;
+  font-weight: 700;
+}
+.restaurants .card-group__card__content {
+  display: flex;
+  padding: 1rem 1.5rem 1rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurants .card-group__card__content div {
+  display: flex;
+  flex-direction: column;
+  height: 2.5rem;
+  justify-content: space-between;
+}
+.restaurants .card-group__card__content strong {
+  font-weight: 900;
+}
+.restaurants .card-group__card__content i {
+  font-size: 1.75rem;
 }
 
 .card-group {
@@ -200,9 +245,7 @@ header {
 .card-group__card {
   background-color: #f2f2f2;
   width: 100%;
-  padding: 1.5rem 0;
   margin-bottom: 1.5rem;
-  font-weight: 700;
   border-radius: 1rem;
 }
 
