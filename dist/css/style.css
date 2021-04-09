@@ -75,6 +75,13 @@ select {
 }
 /* FONTS */
 /* COLORS */
+h1,
+footer h3 {
+  font-family: "Shrikhand", sans-serif;
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
 .localisation input {
   overflow: hidden;
   white-space: nowrap;
@@ -110,9 +117,12 @@ section {
   padding: 2rem 1rem 3rem;
 }
 
-h1 {
-  font-family: "Shrikhand", sans-serif;
-  text-transform: lowercase;
+ul {
+  padding: 0;
+}
+
+a:visited {
+  color: inherit;
 }
 
 header {
@@ -122,6 +132,33 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 2;
   position: relative;
+}
+
+footer {
+  padding: 1.5rem 1rem;
+  color: #fff;
+  background-color: #333333;
+}
+footer li {
+  margin-top: 0.5rem;
+}
+footer a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+footer a .fa-hands-helping {
+  font-size: 0.75rem;
+}
+footer a i + span {
+  padding-left: 0.75rem;
+  font-weight: 400;
+}
+footer a span {
+  font-weight: 300;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* N"INCLUT PAS DE BLOCS SPECIFIQUE A LA HOMEPAGE OU PAGE DE MENU*/

@@ -1,5 +1,11 @@
 @use 'vars' as *;
 
+%title {
+  font-family: $title-font, sans-serif;
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
 %text-overflow {
   overflow: hidden;
   white-space: nowrap;

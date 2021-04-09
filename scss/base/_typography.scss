@@ -1,6 +1,6 @@
 @use '../abstracts/' as *;
 
-h1 {
-  font-family: $title-font, sans-serif;
-  text-transform: lowercase;
+h1,
+footer h3 {
+  @extend %title;
 }
