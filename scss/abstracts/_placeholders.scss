@@ -11,7 +11,9 @@
 }
 
 %btn {
-  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
 
   span {
     background: linear-gradient(to bottom right, $secondary-color, $primary-color);
