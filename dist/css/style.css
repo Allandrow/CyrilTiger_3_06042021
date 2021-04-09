@@ -81,6 +81,10 @@ select {
   text-overflow: ellipsis;
 }
 
+.card-group__card, .hero__link span {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .hero__link {
   text-decoration: none;
 }
@@ -101,6 +105,10 @@ body {
   font-weight: 600;
 }
 
+section {
+  padding: 2rem 1rem 3rem;
+}
+
 h1 {
   font-family: "Shrikhand", sans-serif;
 }
@@ -119,6 +127,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: #e6e6e6;
+  align-items: center;
   z-index: 1;
 }
 .localisation input {
@@ -131,7 +140,6 @@ header {
 
 .hero {
   text-align: center;
-  padding: 2rem 0 3rem;
   background-color: #f2f2f2;
 }
 .hero h2 {
@@ -145,8 +153,23 @@ header {
   justify-content: center;
 }
 
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.card-group__card {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  border-radius: 1rem;
+}
+
 /* Reset */
 /* Header */
 /* Block de layout propre à la homepage */
+/* Card */
 
 /*# sourceMappingURL=style.css.map */

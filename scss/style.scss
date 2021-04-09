@@ -5,8 +5,9 @@
 @use 'layout';
 
 /* Block de layout propre à la homepage */
-
 @use 'layout/localisation' as *;
 @use 'layout/hero' as *;
+@use 'layout/fonctionnement' as *;
 
+/* Card */
 @use 'components' as *;
