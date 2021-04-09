@@ -1,5 +1,18 @@
+@use 'vars' as *;
+
 %text-overflow {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+%btn {
+  text-decoration: none;
+
+  span {
+    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    border-radius: 2rem;
+    padding: 1rem;
+    color: $bg-base;
+  }
 }

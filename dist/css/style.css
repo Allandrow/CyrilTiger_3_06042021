@@ -81,6 +81,16 @@ select {
   text-overflow: ellipsis;
 }
 
+.hero__link {
+  text-decoration: none;
+}
+.hero__link span {
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 2rem;
+  padding: 1rem;
+  color: #fff;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -121,22 +131,18 @@ header {
 
 .hero {
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 0 3rem;
   background-color: #f2f2f2;
 }
 .hero h2 {
   margin-bottom: 1rem;
 }
 .hero p {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
-
-.btn {
-  text-decoration: none;
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  border-radius: 2rem;
-  padding: 1rem;
-  color: #fff;
+.hero__link {
+  display: flex;
+  justify-content: center;
 }
 
 /* Reset */

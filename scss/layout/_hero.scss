@@ -2,7 +2,7 @@
 
 .hero {
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 0 3rem;
   background-color: $bg-light;
 
   h2 {
@@ -10,6 +10,12 @@
   }
 
   p {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    @extend %btn;
   }
 }
