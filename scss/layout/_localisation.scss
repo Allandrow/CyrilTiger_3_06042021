@@ -5,12 +5,13 @@
   justify-content: center;
   background-color: darken($bg-base, 10%);
   z-index: 1;
-  padding: 1rem 0;
 
-  span {
+  input {
     font-weight: 600;
-    margin-left: 1rem;
     width: 10rem;
+    padding: 1rem 0 1rem 1rem;
+    border: none;
+    background-color: inherit;
     @extend %text-overflow;
   }
 }

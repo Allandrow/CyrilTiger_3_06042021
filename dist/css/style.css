@@ -75,7 +75,7 @@ select {
 }
 /* FONTS */
 /* COLORS */
-.localisation span {
+.localisation input {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -110,12 +110,13 @@ header {
   justify-content: center;
   background-color: #e6e6e6;
   z-index: 1;
-  padding: 1rem 0;
 }
-.localisation span {
+.localisation input {
   font-weight: 600;
-  margin-left: 1rem;
   width: 10rem;
+  padding: 1rem 0 1rem 1rem;
+  border: none;
+  background-color: inherit;
 }
 
 .hero {
