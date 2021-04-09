@@ -111,6 +111,7 @@ section {
 
 h1 {
   font-family: "Shrikhand", sans-serif;
+  text-transform: lowercase;
 }
 
 header {
