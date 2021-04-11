@@ -150,6 +150,16 @@ footer a:hover {
 }
 
 /* N"INCLUT PAS DE BLOCS SPECIFIQUE A LA HOMEPAGE OU PAGE DE MENU*/
+.menu header {
+  align-items: center;
+  position: relative;
+}
+.menu header a {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.5rem;
+}
+
 .card-group {
   display: flex;
   flex-wrap: wrap;
