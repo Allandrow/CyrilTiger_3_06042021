@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Box sizing rules */
 *,
 *::before,
@@ -83,27 +82,11 @@ footer h3 {
   font-weight: 400;
 }
 
-.localisation input {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.card-group__card, .hero__link span {
+.card-group__card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* BOUTONS AVEC DEGRADE DE COULEURS */
-.hero__link a {
-  text-decoration: none;
-}
-.hero__link span {
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  border-radius: 2rem;
-  padding: 1rem;
-  color: #fff;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -167,118 +150,6 @@ footer a:hover {
 }
 
 /* N"INCLUT PAS DE BLOCS SPECIFIQUE A LA HOMEPAGE OU PAGE DE MENU*/
-.localisation {
-  display: flex;
-  justify-content: center;
-  background-color: #e6e6e6;
-  align-items: center;
-  z-index: 1;
-}
-.localisation input {
-  font-weight: 600;
-  width: 10rem;
-  padding: 1rem 0 1rem 1rem;
-  border: none;
-  background-color: inherit;
-}
-
-.hero {
-  text-align: center;
-  background-color: #f2f2f2;
-}
-.hero h2 {
-  margin-bottom: 1rem;
-}
-.hero p {
-  margin-bottom: 2rem;
-}
-.hero__link {
-  display: flex;
-  justify-content: center;
-}
-
-.fonctionnement {
-  counter-reset: card;
-}
-.fonctionnement .card-group {
-  padding-left: 0.75rem;
-}
-.fonctionnement .card-group__card {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 1.5rem 0;
-}
-.fonctionnement .card-group__card::before {
-  counter-increment: card;
-  content: counter(card);
-  background-color: #9356dc;
-  border-radius: 2rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: -0.75rem;
-  color: #fff;
-  font-size: 0.75rem;
-}
-.fonctionnement .card-group__card i {
-  padding: 0 1rem 0 1.75rem;
-  color: #4d4d4d;
-}
-.fonctionnement .card-group__card span {
-  font-weight: 700;
-}
-.fonctionnement .card-group__card:last-of-type {
-  background-color: #f2eafb;
-}
-.fonctionnement .card-group__card:last-of-type i {
-  color: #9356dc;
-}
-
-.restaurants {
-  background-color: #f2f2f2;
-}
-.restaurants .card-group__card__img {
-  height: 175px;
-  position: relative;
-}
-.restaurants .card-group__card__img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 1rem 1rem 0 0;
-}
-.restaurants .card-group__card__img span {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  background-color: #99e2d0;
-  padding: 0.5rem 0.75rem;
-  color: #278870;
-  font-weight: 700;
-}
-.restaurants .card-group__card__content {
-  display: flex;
-  padding: 1rem 1.5rem 1rem 1rem;
-  justify-content: space-between;
-  align-items: center;
-}
-.restaurants .card-group__card__content div {
-  display: flex;
-  flex-direction: column;
-  height: 2.5rem;
-  justify-content: space-between;
-}
-.restaurants .card-group__card__content strong {
-  font-weight: 900;
-}
-.restaurants .card-group__card__content i {
-  font-size: 1.75rem;
-}
-
 .card-group {
   display: flex;
   flex-wrap: wrap;
@@ -299,7 +170,7 @@ footer a:hover {
 
 /* Reset */
 /* Header */
-/* Block de layout propre à la homepage */
+/* Block de layout propre aux pages de menu */
 /* Card */
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style_menu.css.map */
