@@ -75,6 +75,7 @@ select {
 }
 /* FONTS */
 /* COLORS */
+/* BREAKPOINTS */
 h1,
 footer h3 {
   font-family: "Shrikhand", sans-serif;
@@ -284,6 +285,12 @@ footer a:hover {
   width: 100%;
   margin-bottom: 1.5rem;
   border-radius: 1rem;
+}
+@media (min-width: 768px) {
+  .card-group__card {
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+  }
 }
 
 /* Reset */

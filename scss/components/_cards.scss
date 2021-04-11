@@ -11,5 +11,10 @@
     margin-bottom: 1.5rem;
     border-radius: 1rem;
     @extend %box-shadow;
+
+    @include mq($bp-tab) {
+      max-width: 400px;
+      margin: 0 auto 1.5rem;
+    }
   }
 }
