@@ -5,44 +5,44 @@
 
   .card-group {
     padding-left: 0.75rem;
+  }
+  .card {
+    background-color: $bg-light;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
 
-    &__card {
-      position: relative;
+    &::before {
+      counter-increment: card;
+      content: counter(card);
+      background-color: $primary-color;
+      border-radius: 2rem;
+      width: 1.5rem;
+      height: 1.5rem;
       display: flex;
+      justify-content: center;
       align-items: center;
-      padding: 1.5rem 0;
+      position: absolute;
+      left: -0.75rem;
+      color: $bg-base;
+      font-size: 0.75rem;
+    }
 
-      &::before {
-        counter-increment: card;
-        content: counter(card);
-        background-color: $primary-color;
-        border-radius: 2rem;
-        width: 1.5rem;
-        height: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: -0.75rem;
-        color: $bg-base;
-        font-size: 0.75rem;
-      }
+    i {
+      padding: 0 1rem 0 1.75rem;
+      color: lighten(#000, 30%);
+    }
+
+    span {
+      font-weight: 700;
+    }
+
+    &:last-of-type {
+      background-color: lighten($primary-color, 35%);
 
       i {
-        padding: 0 1rem 0 1.75rem;
-        color: lighten(#000, 30%);
-      }
-
-      span {
-        font-weight: 700;
-      }
-
-      &:last-of-type {
-        background-color: lighten($primary-color, 35%);
-
-        i {
-          color: $primary-color;
-        }
+        color: $primary-color;
       }
     }
   }

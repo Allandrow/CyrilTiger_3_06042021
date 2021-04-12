@@ -3,4 +3,10 @@
 h1,
 footer h3 {
   @extend %title;
+  text-transform: lowercase;
+}
+
+h2 {
+  @extend %title;
+  font-size: 1.75rem;
 }

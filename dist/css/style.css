@@ -77,19 +77,18 @@ select {
 /* COLORS */
 /* BREAKPOINTS */
 h1,
-footer h3 {
+footer h3, h2 {
   font-family: "Shrikhand", sans-serif;
-  text-transform: lowercase;
   font-weight: 400;
 }
 
-.localisation input {
+.card__content__text span, .card__content strong, .localisation input {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.card-group__card, .hero__link span {
+.card, .hero__link span {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -128,6 +127,15 @@ ul {
 
 a:visited {
   color: inherit;
+}
+
+h1,
+footer h3 {
+  text-transform: lowercase;
+}
+
+h2 {
+  font-size: 1.75rem;
 }
 
 header {
@@ -203,13 +211,14 @@ footer a:hover {
 .fonctionnement .card-group {
   padding-left: 0.75rem;
 }
-.fonctionnement .card-group__card {
+.fonctionnement .card {
+  background-color: #f2f2f2;
   position: relative;
   display: flex;
   align-items: center;
   padding: 1.5rem 0;
 }
-.fonctionnement .card-group__card::before {
+.fonctionnement .card::before {
   counter-increment: card;
   content: counter(card);
   background-color: #9356dc;
@@ -224,34 +233,37 @@ footer a:hover {
   color: #fff;
   font-size: 0.75rem;
 }
-.fonctionnement .card-group__card i {
+.fonctionnement .card i {
   padding: 0 1rem 0 1.75rem;
   color: #4d4d4d;
 }
-.fonctionnement .card-group__card span {
+.fonctionnement .card span {
   font-weight: 700;
 }
-.fonctionnement .card-group__card:last-of-type {
+.fonctionnement .card:last-of-type {
   background-color: #f2eafb;
 }
-.fonctionnement .card-group__card:last-of-type i {
+.fonctionnement .card:last-of-type i {
   color: #9356dc;
 }
 
 .restaurants {
   background-color: #f2f2f2;
 }
-.restaurants .card-group__card__img {
+.restaurants .card {
+  flex-direction: column;
+}
+.restaurants .card__img {
   height: 175px;
   position: relative;
 }
-.restaurants .card-group__card__img img {
+.restaurants .card__img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
-.restaurants .card-group__card__img span {
+.restaurants .card__img span {
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
@@ -260,41 +272,63 @@ footer a:hover {
   color: #278870;
   font-weight: 700;
 }
-.restaurants .card-group__card__content {
-  display: flex;
-  padding: 1rem 1.5rem 1rem 1rem;
-  justify-content: space-between;
-  align-items: center;
-}
-.restaurants .card-group__card__content div {
-  display: flex;
-  flex-direction: column;
-  height: 2.5rem;
-  justify-content: space-between;
-}
-.restaurants .card-group__card__content strong {
-  font-weight: 900;
-}
-.restaurants .card-group__card__content i {
-  font-size: 1.75rem;
-}
 
 .card-group {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
-.card-group__card {
-  background-color: #f2f2f2;
+
+.card {
+  background-color: #fff;
   width: 100%;
   margin-bottom: 1.5rem;
   border-radius: 1rem;
+  display: flex;
 }
 @media (min-width: 768px) {
-  .card-group__card {
+  .card {
     max-width: 400px;
     margin: 0 auto 1.5rem;
   }
+}
+.card__content {
+  display: flex;
+  flex: 1;
+  padding: 1rem 1.5rem 1rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__content__text {
+  display: flex;
+  flex-direction: column;
+  height: 2.5rem;
+  justify-content: space-between;
+}
+.card__content strong {
+  font-weight: 900;
+}
+.card__content i {
+  font-size: 1.75rem;
+}
+.card__content__price {
+  align-self: flex-end;
+  font-weight: 700;
+}
+.card__hover {
+  width: 4rem;
+  background-color: #99e2d0;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  font-size: 1.25rem;
+  border-radius: 0 1rem 1rem 0;
+  transform: translateX(4rem);
+}
+.card:hover .card__hover {
+  transform: translateX(0);
 }
 
 /* Reset */

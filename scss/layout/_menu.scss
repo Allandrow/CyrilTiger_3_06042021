@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .menu {
   header {
     align-items: center;
@@ -9,4 +11,30 @@
       font-size: 1.5rem;
     }
   }
+
+  section {
+    background-color: $bg-light;
+    border-radius: 2rem 2rem 0 0;
+    margin-top: -2rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    h2 {
+      display: flex;
+      justify-content: space-between;
+    }
+    i {
+      margin-right: 1rem;
+    }
+  }
+
+  .card {
+    overflow-x: hidden;
+  }
+}
+
+.sub-menu {
+  padding: 1rem 0;
 }

@@ -76,13 +76,18 @@ select {
 /* COLORS */
 /* BREAKPOINTS */
 h1,
-footer h3 {
+footer h3, h2 {
   font-family: "Shrikhand", sans-serif;
-  text-transform: lowercase;
   font-weight: 400;
 }
 
-.card-group__card {
+.card__content__text span, .card__content strong {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -111,6 +116,15 @@ ul {
 
 a:visited {
   color: inherit;
+}
+
+h1,
+footer h3 {
+  text-transform: lowercase;
+}
+
+h2 {
+  font-size: 1.75rem;
 }
 
 header {
@@ -159,23 +173,84 @@ footer a:hover {
   left: 1rem;
   font-size: 1.5rem;
 }
+.menu section {
+  background-color: #f2f2f2;
+  border-radius: 2rem 2rem 0 0;
+  margin-top: -2rem;
+  position: relative;
+  z-index: 2;
+}
+.menu__title h2 {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__title i {
+  margin-right: 1rem;
+}
+.menu .card {
+  overflow-x: hidden;
+}
+
+.sub-menu {
+  padding: 1rem 0;
+}
 
 .card-group {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
-.card-group__card {
-  background-color: #f2f2f2;
+
+.card {
+  background-color: #fff;
   width: 100%;
   margin-bottom: 1.5rem;
   border-radius: 1rem;
+  display: flex;
 }
 @media (min-width: 768px) {
-  .card-group__card {
+  .card {
     max-width: 400px;
     margin: 0 auto 1.5rem;
   }
+}
+.card__content {
+  display: flex;
+  flex: 1;
+  padding: 1rem 1.5rem 1rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__content__text {
+  display: flex;
+  flex-direction: column;
+  height: 2.5rem;
+  justify-content: space-between;
+}
+.card__content strong {
+  font-weight: 900;
+}
+.card__content i {
+  font-size: 1.75rem;
+}
+.card__content__price {
+  align-self: flex-end;
+  font-weight: 700;
+}
+.card__hover {
+  width: 4rem;
+  background-color: #99e2d0;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  font-size: 1.25rem;
+  border-radius: 0 1rem 1rem 0;
+  transform: translateX(4rem);
+}
+.card:hover .card__hover {
+  transform: translateX(0);
 }
 
 /* Reset */

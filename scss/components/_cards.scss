@@ -4,17 +4,68 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
+}
 
-  &__card {
-    background-color: $bg-light;
-    width: 100%;
-    margin-bottom: 1.5rem;
-    border-radius: 1rem;
-    @extend %box-shadow;
+.card {
+  background-color: $bg-base;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  @extend %box-shadow;
+  display: flex;
 
-    @include mq($bp-tab) {
-      max-width: 400px;
-      margin: 0 auto 1.5rem;
+  @include mq($bp-tab) {
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+  }
+
+  &__content {
+    display: flex;
+    flex: 1;
+    padding: 1rem 1.5rem 1rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      height: 2.5rem;
+      justify-content: space-between;
+
+      span {
+        @extend %text-overflow;
+      }
     }
+
+    strong {
+      font-weight: 900;
+      @extend %text-overflow;
+    }
+
+    i {
+      font-size: 1.75rem;
+    }
+
+    &__price {
+      align-self: flex-end;
+      font-weight: 700;
+    }
+  }
+
+  &__hover {
+    width: 4rem;
+    background-color: $tertiary-color;
+    color: $bg-base;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    font-size: 1.25rem;
+    border-radius: 0 1rem 1rem 0;
+    transform: translateX(4rem);
+  }
+
+  &:hover &__hover {
+    transform: translateX(0);
   }
 }
