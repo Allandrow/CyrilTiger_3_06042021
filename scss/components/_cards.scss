@@ -22,6 +22,10 @@
   @extend %box-shadow;
   display: flex;
 
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
   @include mq($bp-tab) {
     max-width: 400px;
     margin: 0 auto 1.5rem;
