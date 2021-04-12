@@ -138,6 +138,21 @@ h2 {
   font-size: 1.75rem;
 }
 
+.menu h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+}
+.menu h3::after {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+}
+
 header {
   display: flex;
   justify-content: center;
