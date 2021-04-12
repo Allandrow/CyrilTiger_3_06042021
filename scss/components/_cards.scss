@@ -6,6 +6,14 @@
   margin-top: 2rem;
 }
 
+.card__info {
+  min-width: 100%;
+}
+
+.card:hover .card__info {
+  min-width: calc(100% - 4rem);
+}
+
 .card {
   background-color: $bg-base;
   width: 100%;
@@ -21,16 +29,17 @@
 
   &__content {
     display: flex;
-    flex: 1;
     padding: 1rem 1.5rem 1rem 1rem;
     justify-content: space-between;
     align-items: center;
 
     &__text {
       display: flex;
+      flex: 1;
       flex-direction: column;
       height: 2.5rem;
       justify-content: space-between;
+      max-width: 80%;
 
       span {
         @extend %text-overflow;
@@ -53,7 +62,7 @@
   }
 
   &__hover {
-    width: 4rem;
+    min-width: 4rem;
     background-color: $tertiary-color;
     color: $bg-base;
     justify-content: center;
@@ -62,10 +71,5 @@
     height: 100%;
     font-size: 1.25rem;
     border-radius: 0 1rem 1rem 0;
-    transform: translateX(4rem);
-  }
-
-  &:hover &__hover {
-    transform: translateX(0);
   }
 }
