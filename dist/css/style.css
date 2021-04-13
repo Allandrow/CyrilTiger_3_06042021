@@ -138,12 +138,12 @@ h2 {
   font-size: 1.75rem;
 }
 
-.menu h3 {
+main h3 {
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
 }
-.menu h3::after {
+main h3::after {
   content: "";
   position: absolute;
   bottom: -0.25rem;
