@@ -87,11 +87,26 @@ footer h3, h2 {
   text-overflow: ellipsis;
 }
 
-.card {
+.card, .link span {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* BOUTONS AVEC DEGRADE DE COULEURS */
+.link a {
+  text-decoration: none;
+  display: flex;
+}
+.link a:hover span {
+  background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.link span {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 2rem;
+  padding: 1rem;
+  color: #fff;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -224,6 +239,15 @@ footer a:hover {
 
 .sub-menu {
   padding: 1rem 0;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.link span {
+  padding: 1rem 2rem;
 }
 
 .card-group {

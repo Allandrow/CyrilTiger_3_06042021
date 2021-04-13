@@ -19,10 +19,22 @@
 %btn {
   a {
     text-decoration: none;
+    display: flex;
+
+    &:hover {
+      span {
+        background-image: linear-gradient(
+          to bottom right,
+          lighten($secondary-color, 10%),
+          lighten($primary-color, 10%)
+        );
+        box-shadow: 0 8px 16px rgba(black, 0.4);
+      }
+    }
   }
 
   span {
-    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
     border-radius: 2rem;
     padding: 1rem;
     color: $bg-base;
