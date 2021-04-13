@@ -29,6 +29,10 @@
   @include mq($bp-tab) {
     max-width: 400px;
     margin: 0 auto 1.5rem;
+
+    &:last-of-type {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__content {
