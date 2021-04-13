@@ -161,6 +161,7 @@ footer {
 }
 footer li {
   margin-top: 0.5rem;
+  display: flex;
 }
 footer a {
   text-decoration: none;
