@@ -9,6 +9,10 @@ footer h3 {
 h2 {
   @extend %title;
   font-size: 1.75rem;
+
+  span::first-letter {
+    text-transform: uppercase;
+  }
 }
 
 main h3 {

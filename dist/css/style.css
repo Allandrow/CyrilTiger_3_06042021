@@ -137,6 +137,9 @@ footer h3 {
 h2 {
   font-size: 1.75rem;
 }
+h2 span::first-letter {
+  text-transform: uppercase;
+}
 
 main h3 {
   text-transform: uppercase;
@@ -334,6 +337,9 @@ footer a:hover {
 }
 .card__content strong {
   font-weight: 900;
+}
+.card__content strong::first-letter {
+  text-transform: uppercase;
 }
 .card__content i {
   font-size: 1.75rem;
