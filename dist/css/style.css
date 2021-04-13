@@ -1,4 +1,6 @@
-@charset "UTF-8";
+/* FONTS */
+/* COLORS */
+/* BREAKPOINTS */
 /* Box sizing rules */
 *,
 *::before,
@@ -73,56 +75,19 @@ select {
     scroll-behavior: auto !important;
   }
 }
-/* FONTS */
-/* COLORS */
-/* BREAKPOINTS */
-h1,
-footer h3, h2 {
-  font-family: "Shrikhand", sans-serif;
-  font-weight: 400;
-}
-
-.card__content__text span, .card__content strong, .localisation input {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.card, .hero__link span {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* BOUTONS AVEC DEGRADE DE COULEURS */
-.hero__link a {
-  text-decoration: none;
-  display: flex;
-}
-.hero__link a:hover span {
-  background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-.hero__link span {
-  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
-  border-radius: 2rem;
-  padding: 1rem;
-  color: #fff;
-}
-
 body {
   font-family: "Roboto", sans-serif;
-}
-
-::placeholder {
-  color: #000;
-  opacity: 1;
-  font-weight: 600;
 }
 
 section {
   padding: 2rem 1rem 3rem;
 }
-section a {
+
+a {
   text-decoration: none;
+  color: inherit;
+}
+a:visited {
   color: inherit;
 }
 
@@ -130,16 +95,16 @@ ul {
   padding: 0;
 }
 
-a:visited {
-  color: inherit;
-}
-
 h1,
 footer h3 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
   text-transform: lowercase;
 }
 
 h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
   font-size: 1.75rem;
 }
 h2 span::first-letter {
@@ -149,16 +114,6 @@ h2 span::first-letter {
 main h3 {
   text-transform: uppercase;
   font-weight: 300;
-  position: relative;
-}
-main h3::after {
-  content: "";
-  position: absolute;
-  bottom: -0.25rem;
-  left: 0;
-  width: 40px;
-  height: 3px;
-  background-color: #99e2d0;
 }
 
 header {
@@ -198,20 +153,23 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* N"INCLUT PAS DE BLOCS SPECIFIQUE A LA HOMEPAGE OU PAGE DE MENU*/
-.localisation {
-  display: flex;
-  justify-content: center;
-  background-color: #e6e6e6;
-  align-items: center;
-  z-index: 1;
-}
-.localisation input {
+::placeholder {
+  color: #000;
+  opacity: 1;
   font-weight: 600;
-  width: 10rem;
-  padding: 1rem 0 1rem 1rem;
-  border: none;
-  background-color: inherit;
+}
+
+main h3 {
+  position: relative;
+}
+main h3::after {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
 }
 
 .hero {
@@ -227,6 +185,39 @@ footer a:hover {
 .hero__link {
   display: flex;
   justify-content: center;
+}
+.hero__link a {
+  text-decoration: none;
+  display: flex;
+}
+.hero__link a:hover span {
+  background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.hero__link span {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 2rem;
+  padding: 1rem;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  background-color: #e6e6e6;
+  align-items: center;
+  z-index: 1;
+}
+.localisation input {
+  font-weight: 600;
+  width: 10rem;
+  padding: 1rem 0 1rem 1rem;
+  border: none;
+  background-color: inherit;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .fonctionnement {
@@ -269,6 +260,73 @@ footer a:hover {
 }
 .fonctionnement .card:last-of-type i {
   color: #9356dc;
+}
+
+.menu header {
+  align-items: center;
+  position: relative;
+}
+.menu header a {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.5rem;
+}
+.menu__img {
+  height: 260px;
+}
+.menu__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.menu section {
+  background-color: #f2f2f2;
+  border-radius: 2rem 2rem 0 0;
+  margin-top: -2rem;
+  position: relative;
+  z-index: 2;
+}
+.menu .card-group {
+  margin-top: 1.5rem;
+}
+.menu__title h2 {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__title i {
+  margin-right: 1rem;
+}
+.menu .card {
+  overflow-x: hidden;
+}
+
+.sub-menu {
+  padding: 1rem 0;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.link a {
+  text-decoration: none;
+  display: flex;
+}
+.link a:hover span {
+  background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.link span {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 2rem;
+  padding: 1rem;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.link span {
+  padding: 1rem 2rem;
 }
 
 .restaurants {
@@ -316,6 +374,7 @@ footer a:hover {
   width: 100%;
   margin-bottom: 1.5rem;
   border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
 }
 .card:last-of-type {
@@ -344,8 +403,16 @@ footer a:hover {
   justify-content: space-between;
   max-width: 80%;
 }
+.card__content__text span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .card__content strong {
   font-weight: 900;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .card__content strong::first-letter {
   text-transform: uppercase;
@@ -368,10 +435,5 @@ footer a:hover {
   font-size: 1.25rem;
   border-radius: 0 1rem 1rem 0;
 }
-
-/* Reset */
-/* Header */
-/* Block de layout propre à la homepage */
-/* Card */
 
 /*# sourceMappingURL=style.css.map */

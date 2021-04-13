@@ -2,12 +2,14 @@
 
 h1,
 footer h3 {
-  @extend %title;
+  font-family: $title-font, sans-serif;
+  font-weight: 400;
   text-transform: lowercase;
 }
 
 h2 {
-  @extend %title;
+  font-family: $title-font, sans-serif;
+  font-weight: 400;
   font-size: 1.75rem;
 
   span::first-letter {
@@ -18,15 +20,4 @@ h2 {
 main h3 {
   text-transform: uppercase;
   font-weight: 300;
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -0.25rem;
-    left: 0;
-    width: 40px;
-    height: 3px;
-    background-color: $tertiary-color;
-  }
 }

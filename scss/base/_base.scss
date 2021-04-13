@@ -4,25 +4,19 @@ body {
   font-family: $content-font, sans-serif;
 }
 
-::placeholder {
-  color: #000;
-  opacity: 1;
-  font-weight: 600;
-}
-
 section {
   padding: 2rem 1rem 3rem;
+}
 
-  a {
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:visited {
     color: inherit;
   }
 }
 
 ul {
   padding: 0;
-}
-
-a:visited {
-  color: inherit;
 }
