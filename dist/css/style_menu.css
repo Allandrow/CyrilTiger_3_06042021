@@ -188,6 +188,15 @@ footer a:hover {
   left: 1rem;
   font-size: 1.5rem;
 }
+.menu__img {
+  height: 260px;
+}
+.menu__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 .menu section {
   background-color: #f2f2f2;
   border-radius: 2rem 2rem 0 0;
