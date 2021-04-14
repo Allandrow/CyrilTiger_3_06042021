@@ -1,11 +1,15 @@
 @use '../abstracts/' as *;
 
-body {
-  font-family: $content-font, sans-serif;
-}
-
 section {
   padding: 2rem 1rem 3rem;
+
+  &:nth-of-type(2n + 1) {
+    background-color: $bg-light;
+  }
+}
+
+h2 {
+  margin-bottom: 1rem;
 }
 
 a {

@@ -1,0 +1,68 @@
+@use '../abstracts/' as *;
+
+main h3 {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: $tertiary-color;
+  }
+}
+
+.restaurant-menu {
+  header {
+    align-items: center;
+    position: relative;
+
+    a {
+      position: absolute;
+      left: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__img {
+    height: 260px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  section {
+    border-radius: 2rem 2rem 0 0;
+    margin-top: -2rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .card-group {
+    margin-top: 1.5rem;
+  }
+
+  &__title {
+    h2 {
+      display: flex;
+      justify-content: space-between;
+    }
+    i {
+      margin-right: 1rem;
+    }
+  }
+
+  .card {
+    overflow-x: hidden;
+  }
+}
+
+.sub-menu {
+  padding: 1rem 0;
+}

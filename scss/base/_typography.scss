@@ -1,5 +1,9 @@
 @use '../abstracts/' as *;
 
+body {
+  font-family: $content-font, sans-serif;
+}
+
 h1,
 footer h3 {
   font-family: $title-font, sans-serif;

@@ -1,0 +1,6 @@
+@use '../abstracts/' as *;
+
+.home section:first-of-type {
+  text-align: center;
+  // background-color: $bg-light;
+}
