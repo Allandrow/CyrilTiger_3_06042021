@@ -3,13 +3,6 @@
 .restaurant-menu {
   &__img {
     height: 260px;
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
   }
 
   section {
@@ -22,12 +15,4 @@
   &__title {
     margin-right: 1rem;
   }
-
-  .card {
-    overflow-x: hidden;
-  }
-}
-
-.sub-menu {
-  padding: 1rem 0;
 }

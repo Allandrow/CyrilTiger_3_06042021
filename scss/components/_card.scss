@@ -7,19 +7,10 @@
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
 
   &:last-of-type {
     margin-bottom: 0;
-  }
-
-  @include mq($bp-tab) {
-    max-width: 400px;
-    margin: 0 auto 1.5rem;
-
-    &:last-of-type {
-      margin-bottom: 1.5rem;
-    }
   }
 
   &__content {
@@ -27,6 +18,7 @@
     padding: 1rem 1.5rem 1rem 1rem;
     justify-content: space-between;
     align-items: center;
+    min-width: 100%;
 
     &__text {
       display: flex;
@@ -73,82 +65,21 @@
     display: flex;
     height: 100%;
     font-size: 1.25rem;
-    border-radius: 0 1rem 1rem 0;
   }
-}
 
-.card-group {
-  &--numbered-list {
-    counter-reset: card-count;
-    padding-left: 0.75rem;
+  &--img {
+    flex-direction: column;
 
-    .card {
-      background-color: $bg-light;
+    &__img {
+      height: 175px;
       position: relative;
-      display: flex;
-      align-items: center;
-      overflow: visible;
-      padding: 1.5rem 0;
 
-      &::before {
-        counter-increment: card-count;
-        content: counter(card-count);
-        background-color: $primary-color;
-        border-radius: 2rem;
-        width: 1.5rem;
-        height: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: -0.75rem;
-        color: $bg-base;
-        font-size: 0.75rem;
-      }
-
-      i {
-        padding: 0 1rem 0 1.75rem;
-        color: lighten(#000, 30%);
-      }
-
-      span {
-        font-weight: 700;
-      }
-
-      &:last-of-type {
-        background-color: lighten($primary-color, 35%);
-
-        i {
-          color: $primary-color;
-        }
+      img {
+        border-radius: 1rem 1rem 0 0;
       }
     }
-  }
-}
 
-.card__info {
-  min-width: 100%;
-}
-
-.card:hover .card__info {
-  min-width: calc(100% - 4rem);
-}
-
-.restaurants .card {
-  flex-direction: column;
-
-  &__img {
-    height: 175px;
-    position: relative;
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 1rem 1rem 0 0;
-    }
-
-    span {
+    &__new {
       position: absolute;
       top: 0.75rem;
       right: 0.75rem;
@@ -156,6 +87,61 @@
       padding: 0.5rem 0.75rem;
       color: darken($tertiary-color, 40%);
       font-weight: 700;
+    }
+  }
+
+  &:hover &__content {
+    min-width: calc(100% - 4rem);
+  }
+
+  @include mq($bp-tab) {
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+
+    &:last-of-type {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.card-group--numbered-list {
+  counter-reset: card-count;
+  padding-left: 0.75rem;
+
+  .card {
+    background-color: $bg-light;
+    position: relative;
+    align-items: center;
+    overflow: visible;
+    padding: 1.5rem 0 1.5rem 1.75rem;
+
+    &::before {
+      counter-increment: card-count;
+      content: counter(card-count);
+      background-color: $primary-color;
+      border-radius: 2rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: -0.75rem;
+      color: $bg-base;
+      font-size: 0.75rem;
+    }
+
+    span {
+      font-weight: 700;
+      padding-left: 1rem;
+    }
+
+    &:last-of-type {
+      background-color: lighten($primary-color, 35%);
+
+      i {
+        color: $primary-color;
+      }
     }
   }
 }

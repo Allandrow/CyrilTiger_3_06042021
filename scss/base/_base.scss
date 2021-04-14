@@ -29,6 +29,10 @@ ul {
   padding: 0;
 }
 
+img {
+  @extend %img;
+}
+
 main h3 {
   position: relative;
 
@@ -47,4 +51,8 @@ main h3 {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1rem;
+}
+
+.sub-menu {
+  padding: 1rem 0;
 }

@@ -75,6 +75,13 @@ select {
 /* FONTS */
 /* COLORS */
 /* BREAKPOINTS */
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 section {
   padding: 2rem 1rem 3rem;
   display: flex;
@@ -119,6 +126,10 @@ main h3::after {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1rem;
+}
+
+.sub-menu {
+  padding: 1rem 0;
 }
 
 body {
@@ -185,7 +196,7 @@ footer a i + span {
 footer a span {
   font-weight: 300;
 }
-footer a:hover {
+footer a:hover span {
   text-decoration: underline;
 }
 
@@ -265,25 +276,17 @@ footer a:hover {
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .card:last-of-type {
   margin-bottom: 0;
-}
-@media (min-width: 768px) {
-  .card {
-    max-width: 400px;
-    margin: 0 auto 1.5rem;
-  }
-  .card:last-of-type {
-    margin-bottom: 1.5rem;
-  }
 }
 .card__content {
   display: flex;
   padding: 1rem 1.5rem 1rem 1rem;
   justify-content: space-between;
   align-items: center;
+  min-width: 100%;
 }
 .card__content__text {
   display: flex;
@@ -323,7 +326,37 @@ footer a:hover {
   display: flex;
   height: 100%;
   font-size: 1.25rem;
-  border-radius: 0 1rem 1rem 0;
+}
+.card--img {
+  flex-direction: column;
+}
+.card--img__img {
+  height: 175px;
+  position: relative;
+}
+.card--img__img img {
+  border-radius: 1rem 1rem 0 0;
+}
+.card--img__new {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background-color: #99e2d0;
+  padding: 0.5rem 0.75rem;
+  color: #278870;
+  font-weight: 700;
+}
+.card:hover .card__content {
+  min-width: calc(100% - 4rem);
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+  }
+  .card:last-of-type {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .card-group--numbered-list {
@@ -333,10 +366,9 @@ footer a:hover {
 .card-group--numbered-list .card {
   background-color: #f2f2f2;
   position: relative;
-  display: flex;
   align-items: center;
   overflow: visible;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 1.5rem 1.75rem;
 }
 .card-group--numbered-list .card::before {
   counter-increment: card-count;
@@ -353,49 +385,15 @@ footer a:hover {
   color: #fff;
   font-size: 0.75rem;
 }
-.card-group--numbered-list .card i {
-  padding: 0 1rem 0 1.75rem;
-  color: #4d4d4d;
-}
 .card-group--numbered-list .card span {
   font-weight: 700;
+  padding-left: 1rem;
 }
 .card-group--numbered-list .card:last-of-type {
   background-color: #f2eafb;
 }
 .card-group--numbered-list .card:last-of-type i {
   color: #9356dc;
-}
-
-.card__info {
-  min-width: 100%;
-}
-
-.card:hover .card__info {
-  min-width: calc(100% - 4rem);
-}
-
-.restaurants .card {
-  flex-direction: column;
-}
-.restaurants .card__img {
-  height: 175px;
-  position: relative;
-}
-.restaurants .card__img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 1rem 1rem 0 0;
-}
-.restaurants .card__img span {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  background-color: #99e2d0;
-  padding: 0.5rem 0.75rem;
-  color: #278870;
-  font-weight: 700;
 }
 
 .home section:first-of-type {
@@ -405,12 +403,6 @@ footer a:hover {
 .restaurant-menu__img {
   height: 260px;
 }
-.restaurant-menu__img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
 .restaurant-menu section {
   border-radius: 2rem 2rem 0 0;
   margin-top: -2rem;
@@ -419,13 +411,6 @@ footer a:hover {
 }
 .restaurant-menu__title {
   margin-right: 1rem;
-}
-.restaurant-menu .card {
-  overflow-x: hidden;
-}
-
-.sub-menu {
-  padding: 1rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
