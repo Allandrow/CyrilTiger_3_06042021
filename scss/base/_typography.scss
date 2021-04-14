@@ -16,7 +16,7 @@ h2 {
   font-weight: 400;
   font-size: 1.75rem;
 
-  span::first-letter {
+  p::first-letter {
     text-transform: uppercase;
   }
 }
