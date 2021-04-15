@@ -324,7 +324,7 @@ footer a:hover span {
   justify-content: space-between;
   align-items: center;
   min-width: 100%;
-  transition: min-width 400ms ease-in-out;
+  transition: min-width 300ms ease-out;
 }
 .card__content__text {
   display: flex;
@@ -388,7 +388,7 @@ footer a:hover span {
   min-width: calc(100% - 4rem);
 }
 .card:hover .card__hover i {
-  animation: icon-spin 500ms;
+  animation: icon-spin 300ms ease-in;
 }
 @media (min-width: 768px) {
   .card {
@@ -401,7 +401,7 @@ footer a:hover span {
 }
 
 @keyframes icon-spin {
-  30% {
+  0% {
     transform: rotate(90deg);
   }
   100% {
