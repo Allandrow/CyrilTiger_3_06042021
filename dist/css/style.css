@@ -200,6 +200,43 @@ footer a:hover span {
   text-decoration: underline;
 }
 
+.card-group--numbered-list {
+  counter-reset: card-count;
+  padding-left: 0.75rem;
+}
+.card-group--numbered-list .card {
+  background-color: #f2f2f2;
+  position: relative;
+  align-items: center;
+  overflow: visible;
+  padding: 1.5rem 0 1.5rem 1.75rem;
+}
+.card-group--numbered-list .card::before {
+  counter-increment: card-count;
+  content: counter(card-count);
+  background-color: #9356dc;
+  border-radius: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -0.75rem;
+  color: #fff;
+  font-size: 0.75rem;
+}
+.card-group--numbered-list .card span {
+  font-weight: 700;
+  padding-left: 1rem;
+}
+.card-group--numbered-list .card:last-of-type {
+  background-color: #f2eafb;
+}
+.card-group--numbered-list .card:last-of-type i {
+  color: #9356dc;
+}
+
 ::placeholder {
   color: #000;
   opacity: 1;
@@ -357,43 +394,6 @@ footer a:hover span {
   .card:last-of-type {
     margin-bottom: 1.5rem;
   }
-}
-
-.card-group--numbered-list {
-  counter-reset: card-count;
-  padding-left: 0.75rem;
-}
-.card-group--numbered-list .card {
-  background-color: #f2f2f2;
-  position: relative;
-  align-items: center;
-  overflow: visible;
-  padding: 1.5rem 0 1.5rem 1.75rem;
-}
-.card-group--numbered-list .card::before {
-  counter-increment: card-count;
-  content: counter(card-count);
-  background-color: #9356dc;
-  border-radius: 2rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: -0.75rem;
-  color: #fff;
-  font-size: 0.75rem;
-}
-.card-group--numbered-list .card span {
-  font-weight: 700;
-  padding-left: 1rem;
-}
-.card-group--numbered-list .card:last-of-type {
-  background-color: #f2eafb;
-}
-.card-group--numbered-list .card:last-of-type i {
-  color: #9356dc;
 }
 
 .home section:first-of-type {
