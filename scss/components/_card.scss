@@ -19,7 +19,7 @@
     justify-content: space-between;
     align-items: center;
     min-width: 100%;
-    transition: min-width 400ms ease-in-out;
+    transition: min-width 300ms ease-out;
 
     &__text {
       display: flex;
@@ -97,7 +97,7 @@
 
   &:hover &__hover {
     i {
-      animation: icon-spin 500ms;
+      animation: icon-spin 300ms ease-in;
     }
   }
 
@@ -112,7 +112,7 @@
 }
 
 @keyframes icon-spin {
-  30% {
+  0% {
     transform: rotate(90deg);
   }
 
