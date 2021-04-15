@@ -1,24 +1,25 @@
 @use '../abstracts/' as *;
 
 .card {
-  background-color: $bg-base;
   width: 100%;
   margin-bottom: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
-  overflow-x: hidden;
+  overflow: hidden;
 
   &:last-of-type {
     margin-bottom: 0;
   }
 
   &__content {
+    background-color: $bg-base;
     display: flex;
     padding: 1rem 1.5rem 1rem 1rem;
     justify-content: space-between;
     align-items: center;
     min-width: 100%;
+    transition: min-width 400ms ease-in-out;
 
     &__text {
       display: flex;
@@ -64,7 +65,7 @@
     align-items: center;
     display: flex;
     height: 100%;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   &--img {
@@ -94,6 +95,12 @@
     min-width: calc(100% - 4rem);
   }
 
+  &:hover &__hover {
+    i {
+      animation: icon-spin 500ms;
+    }
+  }
+
   @include mq($bp-tab) {
     max-width: 400px;
     margin: 0 auto 1.5rem;
@@ -101,5 +108,15 @@
     &:last-of-type {
       margin-bottom: 1.5rem;
     }
+  }
+}
+
+@keyframes icon-spin {
+  30% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }

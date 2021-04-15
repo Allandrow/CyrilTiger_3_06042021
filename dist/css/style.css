@@ -307,23 +307,24 @@ footer a:hover span {
 }
 
 .card {
-  background-color: #fff;
   width: 100%;
   margin-bottom: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .card:last-of-type {
   margin-bottom: 0;
 }
 .card__content {
+  background-color: #fff;
   display: flex;
   padding: 1rem 1.5rem 1rem 1rem;
   justify-content: space-between;
   align-items: center;
   min-width: 100%;
+  transition: min-width 400ms ease-in-out;
 }
 .card__content__text {
   display: flex;
@@ -362,7 +363,7 @@ footer a:hover span {
   align-items: center;
   display: flex;
   height: 100%;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 .card--img {
   flex-direction: column;
@@ -386,6 +387,9 @@ footer a:hover span {
 .card:hover .card__content {
   min-width: calc(100% - 4rem);
 }
+.card:hover .card__hover i {
+  animation: icon-spin 500ms;
+}
 @media (min-width: 768px) {
   .card {
     max-width: 400px;
@@ -396,6 +400,14 @@ footer a:hover span {
   }
 }
 
+@keyframes icon-spin {
+  30% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .loader {
   height: 100vh;
   width: 100vw;
