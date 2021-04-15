@@ -130,8 +130,14 @@ main h3::after {
 
 .sub-menu {
   padding: 1rem 0;
+  animation: cardDisplayAnimation 400ms ease-in-out;
 }
 
+@keyframes cardDisplayAnimation {
+  0% {
+    opacity: 0;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -417,7 +423,7 @@ footer a:hover span {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader-display 3s linear;
+  animation: loaderDisplay 3s linear;
   opacity: 0;
   visibility: hidden;
 }
@@ -428,10 +434,10 @@ footer a:hover span {
   border-radius: 50%;
   border: 4px solid #fff;
   border-left-color: #9356dc;
-  animation: spin 1.2s linear 3;
+  animation: loaderSpin 1.2s linear 3;
 }
 
-@keyframes loader-display {
+@keyframes loaderDisplay {
   0% {
     opacity: 1;
     visibility: visible;
@@ -440,7 +446,7 @@ footer a:hover span {
     opacity: 1;
   }
 }
-@keyframes spin {
+@keyframes loaderSpin {
   0% {
     transform: rotate(0deg);
   }
@@ -466,6 +472,33 @@ footer a:hover span {
 }
 .restaurant-menu__title {
   margin-right: 1rem;
+}
+.restaurant-menu .card {
+  animation: cardTranslationAnimation 300ms ease-out forwards;
+  opacity: 0;
+}
+.restaurant-menu .card:nth-child(1) {
+  animation-delay: 150ms;
+}
+.restaurant-menu .card:nth-child(2) {
+  animation-delay: 300ms;
+}
+.restaurant-menu .card:nth-child(3) {
+  animation-delay: 450ms;
+}
+.restaurant-menu .card:nth-child(4) {
+  animation-delay: 600ms;
+}
+
+@keyframes cardTranslationAnimation {
+  0% {
+    transform: translateY(0.5rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
