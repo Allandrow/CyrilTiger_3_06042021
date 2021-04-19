@@ -1,0 +1,33 @@
+@use '../abstracts/' as *;
+
+.icons {
+  position: relative;
+  height: 100%;
+  width: 2rem;
+}
+
+.icon {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+  position: absolute;
+  right: 0;
+
+  &--hover {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    background-image: linear-gradient(to bottom left, $primary-color, $secondary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.icons:hover {
+  .icon {
+    opacity: 0;
+
+    &--hover {
+      opacity: 1;
+    }
+  }
+}
