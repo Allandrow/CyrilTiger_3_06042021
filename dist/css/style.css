@@ -82,6 +82,49 @@ img {
   object-position: center;
 }
 
+@keyframes loaderDisplay {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  95% {
+    opacity: 1;
+  }
+}
+@keyframes loaderSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    border-left-color: #ff79da;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes cardDisplayAnimation {
+  0% {
+    opacity: 0;
+  }
+}
+@keyframes cardTranslationAnimation {
+  0% {
+    transform: translateY(0.5rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes icon-spin {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 section {
   padding: 2rem 1rem 3rem;
   display: flex;
@@ -133,11 +176,6 @@ main h3::after {
   animation: cardDisplayAnimation 400ms ease-in-out;
 }
 
-@keyframes cardDisplayAnimation {
-  0% {
-    opacity: 0;
-  }
-}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -406,14 +444,6 @@ footer a:hover span {
   }
 }
 
-@keyframes icon-spin {
-  0% {
-    transform: rotate(90deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .loader {
   height: 100vh;
   width: 100vw;
@@ -437,26 +467,6 @@ footer a:hover span {
   animation: loaderSpin 1.2s linear 3;
 }
 
-@keyframes loaderDisplay {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  95% {
-    opacity: 1;
-  }
-}
-@keyframes loaderSpin {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    border-left-color: #ff79da;
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .home section:first-of-type {
   text-align: center;
 }
@@ -488,17 +498,6 @@ footer a:hover span {
 }
 .restaurant-menu .card:nth-child(4) {
   animation-delay: 600ms;
-}
-
-@keyframes cardTranslationAnimation {
-  0% {
-    transform: translateY(0.5rem);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

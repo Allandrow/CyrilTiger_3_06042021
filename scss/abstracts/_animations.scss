@@ -1,0 +1,53 @@
+@use 'vars' as *;
+
+@keyframes loaderDisplay {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  95% {
+    opacity: 1;
+  }
+}
+
+@keyframes loaderSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    border-left-color: $secondary-color;
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cardDisplayAnimation {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes cardTranslationAnimation {
+  0% {
+    transform: translateY(0.5rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes icon-spin {
+  0% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

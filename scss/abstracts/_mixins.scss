@@ -3,3 +3,11 @@
     @content;
   }
 }
+
+@mixin cardAnimationDelay {
+  @for $i from 1 to 5 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 150}ms;
+    }
+  }
+}

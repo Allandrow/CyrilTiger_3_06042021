@@ -23,27 +23,3 @@
     animation: loaderSpin 1.2s linear 3;
   }
 }
-
-@keyframes loaderDisplay {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  95% {
-    opacity: 1;
-  }
-}
-
-@keyframes loaderSpin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  50% {
-    border-left-color: $secondary-color;
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}

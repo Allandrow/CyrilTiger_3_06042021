@@ -57,9 +57,3 @@ main h3 {
   padding: 1rem 0;
   animation: cardDisplayAnimation 400ms ease-in-out;
 }
-
-@keyframes cardDisplayAnimation {
-  0% {
-    opacity: 0;
-  }
-}
