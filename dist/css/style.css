@@ -390,8 +390,8 @@ footer a:hover span {
   padding: 1rem 1.5rem 1rem 1rem;
   justify-content: space-between;
   align-items: center;
-  min-width: 100%;
-  transition: min-width 250ms ease-out;
+  flex: 1;
+  min-width: 0;
 }
 .card__content__text {
   display: flex;
@@ -423,7 +423,7 @@ footer a:hover span {
   font-weight: 700;
 }
 .card__hover {
-  min-width: 4rem;
+  width: 0;
   background-color: #99e2d0;
   color: #fff;
   justify-content: center;
@@ -431,6 +431,8 @@ footer a:hover span {
   display: flex;
   height: 100%;
   font-size: 1.5rem;
+  margin-right: -4rem;
+  transition: margin 250ms, width 250ms;
 }
 .card--img {
   flex-direction: column;
@@ -452,8 +454,9 @@ footer a:hover span {
   font-weight: 700;
   border-radius: 2px;
 }
-.card:hover .card__content {
-  min-width: calc(100% - 4rem);
+.card:hover .card__hover {
+  margin-right: 0;
+  width: 4rem;
 }
 .card:hover .card__hover i {
   animation: icon-spin 250ms ease-in;

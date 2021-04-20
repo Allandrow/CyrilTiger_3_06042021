@@ -18,8 +18,8 @@
     padding: 1rem 1.5rem 1rem 1rem;
     justify-content: space-between;
     align-items: center;
-    min-width: 100%;
-    transition: min-width 250ms ease-out;
+    flex: 1;
+    min-width: 0;
 
     &__text {
       display: flex;
@@ -58,7 +58,7 @@
   }
 
   &__hover {
-    min-width: 4rem;
+    width: 0;
     background-color: $tertiary-color;
     color: $bg-base;
     justify-content: center;
@@ -66,6 +66,8 @@
     display: flex;
     height: 100%;
     font-size: 1.5rem;
+    margin-right: -4rem;
+    transition: margin 250ms, width 250ms;
   }
 
   &--img {
@@ -92,11 +94,10 @@
     }
   }
 
-  &:hover &__content {
-    min-width: calc(100% - 4rem);
-  }
-
   &:hover &__hover {
+    margin-right: 0;
+    width: 4rem;
+
     i {
       animation: icon-spin 250ms ease-in;
     }
