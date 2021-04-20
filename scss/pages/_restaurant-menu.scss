@@ -18,7 +18,7 @@
 
   .card {
     @include cardAnimationDelay();
-    animation: cardTranslationAnimation 300ms ease-out forwards;
+    animation: cardTranslationAnimation 250ms ease-out forwards;
     opacity: 0;
   }
 }
