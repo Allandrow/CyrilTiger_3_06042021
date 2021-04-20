@@ -21,4 +21,8 @@
     animation: cardTranslationAnimation 250ms ease-out forwards;
     opacity: 0;
   }
+
+  .btn span {
+    padding: 1rem 2rem;
+  }
 }

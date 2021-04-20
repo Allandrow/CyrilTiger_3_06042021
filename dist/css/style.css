@@ -328,44 +328,20 @@ footer a:hover span {
   text-overflow: ellipsis;
 }
 
-.link {
+.btn {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
-.link a {
+.btn a {
   text-decoration: none;
   display: flex;
 }
-.link a:hover span {
+.btn a:hover span {
   background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
-.link span {
-  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
-  border-radius: 2rem;
-  padding: 1rem;
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.link span {
-  padding: 1rem 2rem;
-}
-
-.hero__link {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-.hero__link a {
-  text-decoration: none;
-  display: flex;
-}
-.hero__link a:hover span {
-  background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-.hero__link span {
+.btn span {
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 2rem;
   padding: 1rem;
@@ -531,6 +507,9 @@ footer a:hover span {
 }
 .restaurant-menu .card:nth-child(4) {
   animation-delay: 600ms;
+}
+.restaurant-menu .btn span {
+  padding: 1rem 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
