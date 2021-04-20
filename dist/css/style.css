@@ -337,16 +337,19 @@ footer a:hover span {
   text-decoration: none;
   display: flex;
 }
-.btn a:hover span {
-  background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-.btn span {
-  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+.btn a span {
+  background-image: linear-gradient(to bottom right, #ff86de 5%, #ff79da 20%, #9356dc 100%);
+  background-size: 150%, 150%;
+  background-position: bottom right;
   border-radius: 2rem;
   padding: 1rem;
   color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-position 300ms, box-shadow 300ms;
+}
+.btn a:hover span, .btn a:active span {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  background-position: top left;
 }
 
 .card {

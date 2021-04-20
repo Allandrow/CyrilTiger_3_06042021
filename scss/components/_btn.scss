@@ -9,23 +9,28 @@
     text-decoration: none;
     display: flex;
 
-    &:hover {
+    span {
+      background-image: linear-gradient(
+        to bottom right,
+        $light-secondary 5%,
+        $secondary-color 20%,
+        $primary-color 100%
+      );
+      background-size: 150%, 150%;
+      background-position: bottom right;
+      border-radius: 2rem;
+      padding: 1rem;
+      color: $bg-base;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-position 300ms, box-shadow 300ms;
+    }
+
+    &:hover,
+    &:active {
       span {
-        background-image: linear-gradient(
-          to bottom right,
-          lighten($secondary-color, 10%),
-          lighten($primary-color, 10%)
-        );
         box-shadow: 0 8px 16px rgba(black, 0.4);
+        background-position: top left;
       }
     }
-  }
-
-  span {
-    background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
-    border-radius: 2rem;
-    padding: 1rem;
-    color: $bg-base;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }

@@ -7,6 +7,7 @@ $content-font: 'Roboto';
 
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
+$light-secondary: scale-color($secondary-color, $lightness: 10%);
 $tertiary-color: #99e2d0;
 $bg-base: #fff;
 $bg-light: darken(#fff, 5%);
