@@ -104,16 +104,28 @@ img {
     border-color: transparent;
     border-top-color: #9356dc;
   }
+  37.5% {
+    border-top-color: #ff79da;
+  }
   50% {
     border-color: transparent;
     border-top-color: #9356dc;
     border-left-color: #9356dc;
+  }
+  62.5% {
+    border-top-color: #ff79da;
+    border-left-color: #ff79da;
   }
   75% {
     border-color: transparent;
     border-top-color: #9356dc;
     border-left-color: #9356dc;
     border-bottom-color: #9356dc;
+  }
+  88.5% {
+    border-top-color: #ff79da;
+    border-left-color: #ff79da;
+    border-bottom-color: #ff79da;
   }
   100% {
     border-color: #9356dc;
@@ -318,7 +330,7 @@ footer a:hover span {
   border-radius: 50%;
   border: 4px solid #fff;
   border-color: transparent;
-  animation: loaderSpin 1.2s cubic-bezier(0.8, 0.2, 0.4, 0.9) 4, loadingCompletion 3s linear;
+  animation: loaderSpin 1s cubic-bezier(0.8, 0.2, 0.4, 0.9) 4, loadingCompletion 3s linear;
 }
 
 ::placeholder {

@@ -26,10 +26,19 @@
     border-top-color: $primary-color;
   }
 
+  37.5% {
+    border-top-color: $secondary-color;
+  }
+
   50% {
     border-color: transparent;
     border-top-color: $primary-color;
     border-left-color: $primary-color;
+  }
+
+  62.5% {
+    border-top-color: $secondary-color;
+    border-left-color: $secondary-color;
   }
 
   75% {
@@ -37,6 +46,11 @@
     border-top-color: $primary-color;
     border-left-color: $primary-color;
     border-bottom-color: $primary-color;
+  }
+  88.5% {
+    border-top-color: $secondary-color;
+    border-left-color: $secondary-color;
+    border-bottom-color: $secondary-color;
   }
 
   100% {
