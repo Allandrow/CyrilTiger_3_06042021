@@ -95,11 +95,28 @@ img {
   0% {
     transform: rotate(0deg);
   }
-  50% {
-    border-left-color: #ff79da;
-  }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes loadingCompletion {
+  25% {
+    border-color: transparent;
+    border-top-color: #9356dc;
+  }
+  50% {
+    border-color: transparent;
+    border-top-color: #9356dc;
+    border-left-color: #9356dc;
+  }
+  75% {
+    border-color: transparent;
+    border-top-color: #9356dc;
+    border-left-color: #9356dc;
+    border-bottom-color: #9356dc;
+  }
+  100% {
+    border-color: #9356dc;
   }
 }
 @keyframes cardDisplayAnimation {
@@ -300,8 +317,8 @@ footer a:hover span {
   height: 50px;
   border-radius: 50%;
   border: 4px solid #fff;
-  border-left-color: #9356dc;
-  animation: loaderSpin 1.2s linear 3;
+  border-color: transparent;
+  animation: loaderSpin 1.2s cubic-bezier(0.8, 0.2, 0.4, 0.9) 4, loadingCompletion 3s linear;
 }
 
 ::placeholder {

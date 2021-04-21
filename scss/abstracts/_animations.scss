@@ -15,12 +15,32 @@
     transform: rotate(0deg);
   }
 
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingCompletion {
+  25% {
+    border-color: transparent;
+    border-top-color: $primary-color;
+  }
+
   50% {
-    border-left-color: $secondary-color;
+    border-color: transparent;
+    border-top-color: $primary-color;
+    border-left-color: $primary-color;
+  }
+
+  75% {
+    border-color: transparent;
+    border-top-color: $primary-color;
+    border-left-color: $primary-color;
+    border-bottom-color: $primary-color;
   }
 
   100% {
-    transform: rotate(360deg);
+    border-color: $primary-color;
   }
 }
 
