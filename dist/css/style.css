@@ -482,6 +482,9 @@ footer a:hover span {
 .home section:first-of-type {
   text-align: center;
 }
+.home section:first-of-type h2 {
+  justify-content: center;
+}
 
 .restaurant-menu__img {
   height: 260px;
