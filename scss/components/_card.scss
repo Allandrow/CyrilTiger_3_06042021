@@ -10,6 +10,10 @@
 
   &:last-of-type {
     margin-bottom: 0;
+
+    @include mq($bp-medium) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__content {
@@ -69,30 +73,6 @@
     font-size: 1.5rem;
     margin-right: -4rem;
     transition: margin 250ms, width 250ms;
-  }
-
-  &--img {
-    flex-direction: column;
-
-    &__img {
-      height: 175px;
-      position: relative;
-
-      img {
-        border-radius: 1rem 1rem 0 0;
-      }
-    }
-
-    &__new {
-      position: absolute;
-      top: 0.75rem;
-      right: 0.75rem;
-      background-color: $tertiary-color;
-      padding: 0.5rem 0.75rem;
-      color: darken($tertiary-color, 40%);
-      font-weight: 700;
-      border-radius: 2px;
-    }
   }
 
   &:hover &__hover {

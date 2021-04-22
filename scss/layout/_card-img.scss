@@ -1,0 +1,32 @@
+@use '../abstracts/' as *;
+
+.card--img {
+  flex-direction: column;
+
+  &__img {
+    height: 175px;
+    position: relative;
+
+    img {
+      border-radius: 1rem 1rem 0 0;
+    }
+  }
+
+  &__new {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background-color: $tertiary-color;
+    padding: 0.5rem 0.75rem;
+    color: darken($tertiary-color, 40%);
+    font-weight: 700;
+    border-radius: 2px;
+  }
+
+  @include mq($bp-medium) {
+    width: calc(50% - 0.75rem);
+    &:nth-child(2n + 1) {
+      margin-right: 1.5rem;
+    }
+  }
+}
