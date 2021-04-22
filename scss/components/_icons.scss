@@ -11,12 +11,13 @@
   transition: opacity 150ms ease-in-out;
   position: absolute;
   right: 0;
-  font-size: ;
+  font-size: 1.75rem;
 
   &--hover {
     opacity: 0;
     transition: opacity 150ms ease-in-out;
     background-image: linear-gradient(to bottom left, $primary-color, $secondary-color);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
   }
