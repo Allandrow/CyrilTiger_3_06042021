@@ -1,6 +1,8 @@
 @use '../abstracts/' as *;
 
 .restaurant-menu {
+  background-color: $bg-light;
+
   &__img {
     height: 260px;
   }
@@ -10,6 +12,12 @@
     margin-top: -2rem;
     position: relative;
     z-index: 2;
+
+    @include mq($bp-desktop) {
+      max-width: 1200px;
+      margin: -2rem auto 0;
+      box-shadow: 0 0 8px rgba(black, 0.2);
+    }
   }
 
   &__title {
@@ -20,6 +28,11 @@
     @include cardAnimationDelay();
     animation: cardTranslationAnimation 250ms ease-out forwards;
     opacity: 0;
+
+    @include mq($bp-medium) {
+      max-width: 300px;
+      margin: 0 auto 1.5rem;
+    }
   }
 
   .btn span {

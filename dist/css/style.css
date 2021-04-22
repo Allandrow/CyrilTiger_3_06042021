@@ -166,6 +166,7 @@ section:nth-of-type(2n + 1) {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  position: relative;
 }
 
 h2 {
@@ -313,6 +314,7 @@ main h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   overflow: hidden;
+  cursor: pointer;
 }
 .card:last-of-type {
   margin-bottom: 0;
@@ -410,12 +412,16 @@ main h3 {
 }
 
 header {
-  display: flex;
-  justify-content: center;
   padding: 1rem 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 2;
   position: relative;
+  background-color: #fff;
+}
+header .wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 header a {
   position: absolute;
@@ -531,6 +537,9 @@ footer a:hover span {
   justify-content: center;
 }
 
+.restaurant-menu {
+  background-color: #f2f2f2;
+}
 .restaurant-menu__img {
   height: 260px;
 }
@@ -539,6 +548,13 @@ footer a:hover span {
   margin-top: -2rem;
   position: relative;
   z-index: 2;
+}
+@media (min-width: 1200px) {
+  .restaurant-menu section {
+    max-width: 1200px;
+    margin: -2rem auto 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
 }
 .restaurant-menu__title {
   margin-right: 1rem;
@@ -558,6 +574,12 @@ footer a:hover span {
 }
 .restaurant-menu .card:nth-child(4) {
   animation-delay: 600ms;
+}
+@media (min-width: 960px) {
+  .restaurant-menu .card {
+    max-width: 300px;
+    margin: 0 auto 1.5rem;
+  }
 }
 .restaurant-menu .btn span {
   padding: 1rem 2rem;
