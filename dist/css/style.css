@@ -131,11 +131,6 @@ img {
     border-color: #9356dc;
   }
 }
-@keyframes cardDisplayAnimation {
-  0% {
-    opacity: 0;
-  }
-}
 @keyframes cardTranslationAnimation {
   0% {
     transform: translateY(0.5rem);
@@ -208,7 +203,6 @@ main h3::after {
 
 .sub-menu {
   padding: 1rem 0;
-  animation: cardDisplayAnimation 250ms ease-in-out;
 }
 
 body {
