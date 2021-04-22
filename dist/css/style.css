@@ -164,12 +164,6 @@ section:nth-of-type(2n + 1) {
   position: relative;
 }
 
-h2 {
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -388,6 +382,7 @@ main h3 {
   transition: opacity 150ms ease-in-out;
   position: absolute;
   right: 0;
+  font-size: 1.75rem;
 }
 .icon--hover {
   opacity: 0;
@@ -552,6 +547,9 @@ footer a:hover span {
 }
 .restaurant-menu__title {
   margin-right: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 .restaurant-menu .card {
   animation: cardTranslationAnimation 250ms ease-out forwards;
