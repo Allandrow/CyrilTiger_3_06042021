@@ -34,10 +34,16 @@
 
     &:last-of-type {
       background-color: lighten($primary-color, 35%);
+      margin-bottom: 1.5rem;
 
       i {
         color: $primary-color;
       }
+    }
+
+    @include mq($bp-tab) {
+      max-width: 300px;
+      margin: 0 auto 1.5rem;
     }
   }
 }

@@ -2,12 +2,17 @@
 
 section {
   padding: 2rem 1rem 3rem;
-  display: flex;
-  flex-direction: column;
 
   &:nth-of-type(2n + 1) {
     background-color: $bg-light;
   }
+}
+
+.wrap {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 h2 {

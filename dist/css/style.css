@@ -156,11 +156,16 @@ img {
 }
 section {
   padding: 2rem 1rem 3rem;
-  display: flex;
-  flex-direction: column;
 }
 section:nth-of-type(2n + 1) {
   background-color: #f2f2f2;
+}
+
+.wrap {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 h2 {
@@ -305,9 +310,16 @@ footer a:hover span {
 }
 .card-group--numbered-list .card:last-of-type {
   background-color: #f2eafb;
+  margin-bottom: 1.5rem;
 }
 .card-group--numbered-list .card:last-of-type i {
   color: #9356dc;
+}
+@media (min-width: 768px) {
+  .card-group--numbered-list .card {
+    max-width: 300px;
+    margin: 0 auto 1.5rem;
+  }
 }
 
 .loader {
@@ -469,15 +481,6 @@ footer a:hover span {
 }
 .card:hover .card__hover i {
   animation: icon-spin 250ms ease-in;
-}
-@media (min-width: 768px) {
-  .card {
-    max-width: 400px;
-    margin: 0 auto 1.5rem;
-  }
-  .card:last-of-type {
-    margin-bottom: 1.5rem;
-  }
 }
 
 .icons {
