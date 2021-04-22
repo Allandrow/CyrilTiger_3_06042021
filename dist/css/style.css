@@ -356,7 +356,7 @@ main h3 {
   height: 100%;
   font-size: 1.5rem;
   margin-right: -4rem;
-  transition: margin 250ms, width 250ms;
+  transition: margin 300ms, width 300ms;
 }
 .card:hover .card__hover {
   margin-right: 0;
