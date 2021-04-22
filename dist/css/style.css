@@ -484,7 +484,6 @@ footer a:hover span {
 }
 .card-group--numbered-list .card:last-of-type {
   background-color: #f2eafb;
-  margin-bottom: 1.5rem;
 }
 .card-group--numbered-list .card:last-of-type i {
   color: #9356dc;
