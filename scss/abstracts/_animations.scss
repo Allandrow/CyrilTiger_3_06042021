@@ -16,45 +16,26 @@
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotate(270deg);
   }
 }
 
-@keyframes loadingCompletion {
-  25% {
-    border-color: transparent;
-    border-top-color: $primary-color;
-  }
-
-  37.5% {
-    border-top-color: $secondary-color;
-  }
-
+@keyframes loaderDash {
   50% {
-    border-color: transparent;
-    border-top-color: $primary-color;
-    border-left-color: $primary-color;
+    stroke-dashoffset: $offset/4;
+    transform: rotate(135deg);
   }
-
-  62.5% {
-    border-top-color: $secondary-color;
-    border-left-color: $secondary-color;
-  }
-
-  75% {
-    border-color: transparent;
-    border-top-color: $primary-color;
-    border-left-color: $primary-color;
-    border-bottom-color: $primary-color;
-  }
-  88.5% {
-    border-top-color: $secondary-color;
-    border-left-color: $secondary-color;
-    border-bottom-color: $secondary-color;
-  }
-
   100% {
-    border-color: $primary-color;
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes loaderColors {
+  50% {
+    stroke: $secondary-color;
+  }
+  100% {
+    stroke: $light-secondary;
   }
 }
 

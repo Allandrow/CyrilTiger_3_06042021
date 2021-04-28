@@ -69,6 +69,7 @@ select {
 }
 /* FONTS */
 /* COLORS */
+/* ANIMATIONS */
 /* BREAKPOINTS */
 img {
   height: 100%;
@@ -91,39 +92,24 @@ img {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(270deg);
   }
 }
-@keyframes loadingCompletion {
-  25% {
-    border-color: transparent;
-    border-top-color: #9356dc;
-  }
-  37.5% {
-    border-top-color: #ff79da;
-  }
+@keyframes loaderDash {
   50% {
-    border-color: transparent;
-    border-top-color: #9356dc;
-    border-left-color: #9356dc;
-  }
-  62.5% {
-    border-top-color: #ff79da;
-    border-left-color: #ff79da;
-  }
-  75% {
-    border-color: transparent;
-    border-top-color: #9356dc;
-    border-left-color: #9356dc;
-    border-bottom-color: #9356dc;
-  }
-  88.5% {
-    border-top-color: #ff79da;
-    border-left-color: #ff79da;
-    border-bottom-color: #ff79da;
+    stroke-dashoffset: 50;
+    transform: rotate(135deg);
   }
   100% {
-    border-color: #9356dc;
+    transform: rotate(450deg);
+  }
+}
+@keyframes loaderColors {
+  50% {
+    stroke: #ff79da;
+  }
+  100% {
+    stroke: #ff86de;
   }
 }
 @keyframes cardTranslationAnimation {
@@ -228,18 +214,19 @@ main h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loaderDisplay 3s linear;
+  animation: loaderDisplay 3.6s linear;
   opacity: 0;
   visibility: hidden;
 }
 .loader__spinner {
-  display: inline-block;
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  border-color: transparent;
-  animation: loaderSpin 1s 4, loadingCompletion 3s linear;
+  animation: loaderSpin 1.2s linear infinite;
+}
+.loader__spinner__path {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  transform-origin: center;
+  stroke: #9356dc;
+  animation: loaderDash 1.2s ease-in-out infinite, loaderColors 3.6s ease-in-out infinite;
 }
 
 ::placeholder {
