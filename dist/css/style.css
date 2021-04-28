@@ -109,6 +109,9 @@ img {
   }
 }
 @keyframes loaderColors {
+  0% {
+    stroke: #9356dc;
+  }
   50% {
     stroke: #ff79da;
   }
@@ -229,7 +232,6 @@ main h3 {
   stroke-dasharray: 187;
   stroke-dashoffset: 0;
   transform-origin: center;
-  stroke: #9356dc;
   animation: loaderDash 1.2s ease-in-out infinite, loaderColors 3.6s ease-in-out infinite;
 }
 

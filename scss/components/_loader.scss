@@ -20,7 +20,6 @@
       stroke-dasharray: $offset;
       stroke-dashoffset: 0;
       transform-origin: center;
-      stroke: $primary-color;
       animation: loaderDash $duration ease-in-out infinite, loaderColors ($duration * 3) ease-in-out infinite;
     }
   }

@@ -35,6 +35,9 @@
 }
 
 @keyframes loaderColors {
+  0% {
+    stroke: $primary-color;
+  }
   50% {
     stroke: $secondary-color;
   }
