@@ -97,14 +97,14 @@ img {
 }
 @keyframes loaderDash {
   0% {
-    stroke-dashoffset: 200;
+    stroke-dashoffset: 187;
   }
   50% {
-    stroke-dashoffset: 50;
+    stroke-dashoffset: 46.75;
     transform: rotate(135deg);
   }
   100% {
-    stroke-dashoffset: 200;
+    stroke-dashoffset: 187;
     transform: rotate(450deg);
   }
 }
@@ -226,7 +226,7 @@ main h3 {
   animation: loaderSpin 1.2s linear infinite;
 }
 .loader__spinner__path {
-  stroke-dasharray: 200;
+  stroke-dasharray: 187;
   stroke-dashoffset: 0;
   transform-origin: center;
   stroke: #9356dc;
