@@ -16,33 +16,17 @@
   }
 
   100% {
-    transform: rotate(270deg);
-  }
-}
-
-@keyframes loaderDash {
-  0% {
-    stroke-dashoffset: $offset;
-  }
-  50% {
-    stroke-dashoffset: $offset/4;
-    transform: rotate(135deg);
-  }
-  100% {
-    stroke-dashoffset: $offset;
-    transform: rotate(450deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes loaderColors {
-  0% {
-    stroke: $primary-color;
+  10% {
+    border-top-color: $secondary-color;
   }
-  50% {
-    stroke: $secondary-color;
-  }
-  100% {
-    stroke: $light-secondary;
+
+  35% {
+    border-top-color: $primary-color;
   }
 }
 

@@ -14,13 +14,13 @@
   visibility: hidden;
 
   &__spinner {
-    animation: loaderSpin $duration linear infinite;
-
-    &__path {
-      stroke-dasharray: $offset;
-      stroke-dashoffset: 0;
-      transform-origin: center;
-      animation: loaderDash $duration ease-in-out infinite, loaderColors ($duration * 3) ease-in-out infinite;
-    }
+    width: 75px;
+    height: 75px;
+    border-top-width: 4px;
+    border-color: transparent;
+    border-top-color: $secondary-color;
+    border-style: solid;
+    border-radius: 50%;
+    animation: loaderSpin 1.2s ease 3, loaderColors 1.2s 3;
   }
 }

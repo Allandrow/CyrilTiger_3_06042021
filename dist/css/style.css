@@ -92,31 +92,15 @@ img {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(270deg);
-  }
-}
-@keyframes loaderDash {
-  0% {
-    stroke-dashoffset: 187;
-  }
-  50% {
-    stroke-dashoffset: 46.75;
-    transform: rotate(135deg);
-  }
-  100% {
-    stroke-dashoffset: 187;
-    transform: rotate(450deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes loaderColors {
-  0% {
-    stroke: #9356dc;
+  10% {
+    border-top-color: #ff79da;
   }
-  50% {
-    stroke: #ff79da;
-  }
-  100% {
-    stroke: #ff86de;
+  35% {
+    border-top-color: #9356dc;
   }
 }
 @keyframes cardTranslationAnimation {
@@ -226,13 +210,14 @@ main h3 {
   visibility: hidden;
 }
 .loader__spinner {
-  animation: loaderSpin 1.2s linear infinite;
-}
-.loader__spinner__path {
-  stroke-dasharray: 187;
-  stroke-dashoffset: 0;
-  transform-origin: center;
-  animation: loaderDash 1.2s ease-in-out infinite, loaderColors 3.6s ease-in-out infinite;
+  width: 75px;
+  height: 75px;
+  border-top-width: 4px;
+  border-color: transparent;
+  border-top-color: #ff79da;
+  border-style: solid;
+  border-radius: 50%;
+  animation: loaderSpin 1.2s ease 3, loaderColors 1.2s 3;
 }
 
 ::placeholder {
