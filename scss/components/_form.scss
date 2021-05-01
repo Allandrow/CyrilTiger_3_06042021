@@ -9,7 +9,7 @@
 .form {
   display: flex;
   justify-content: center;
-  background-color: darken($bg-base, 10%);
+  background-color: map-get($colors, formColor);
   align-items: center;
   z-index: 1;
 

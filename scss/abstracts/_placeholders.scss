@@ -1,6 +1,13 @@
+@use 'vars' as *;
+
 %img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+%titre-typography {
+  font-family: map-get($font, title), sans-serif;
+  font-weight: 400;
 }

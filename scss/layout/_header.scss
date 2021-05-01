@@ -5,7 +5,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 2;
   position: relative;
-  background-color: $bg-base;
+  background-color: map-get($colors, base);
 
   .wrap {
     display: flex;

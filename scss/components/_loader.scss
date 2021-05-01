@@ -3,7 +3,7 @@
 .loader {
   height: 100vh;
   width: 100vw;
-  background-color: $bg-base;
+  background-color: map-get($colors, base);
   position: fixed;
   z-index: 10;
   display: flex;
@@ -18,9 +18,9 @@
     height: 75px;
     border-top-width: 4px;
     border-color: transparent;
-    border-top-color: $secondary-color;
+    border-top-color: map-get($colors, secondary);
     border-style: solid;
     border-radius: 50%;
-    animation: loaderSpin 1.2s ease 3, loaderColors 1.2s 3;
+    animation: loaderSpin $duration ease 3, loaderColors $duration 3;
   }
 }

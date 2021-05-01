@@ -22,11 +22,11 @@
 
 @keyframes loaderColors {
   10% {
-    border-top-color: $secondary-color;
+    border-top-color: map-get($colors, secondary);
   }
 
   35% {
-    border-top-color: $primary-color;
+    border-top-color: map-get($colors, primary);
   }
 }
 

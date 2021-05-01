@@ -12,13 +12,13 @@
   &:last-of-type {
     margin-bottom: 0;
 
-    @include mq($bp-medium) {
+    @include mq(map-get($bp, medium)) {
       margin-bottom: 1.5rem;
     }
   }
 
   &__content {
-    background-color: $bg-base;
+    background-color: map-get($colors, base);
     display: flex;
     padding: 1rem 1.5rem 1rem 1rem;
     justify-content: space-between;
@@ -65,8 +65,8 @@
 
   &__hover {
     width: 0;
-    background-color: $tertiary-color;
-    color: $bg-base;
+    background-color: map-get($colors, tertiary);
+    color: map-get($colors, base);
     justify-content: center;
     align-items: center;
     display: flex;

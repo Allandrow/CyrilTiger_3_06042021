@@ -1,24 +1,33 @@
 /* FONTS */
 
-$title-font: 'Shrikhand';
-$content-font: 'Roboto';
+$font: (
+  title: 'Shrikhand',
+  content: 'Roboto',
+);
 
 /* COLORS */
 
-$primary-color: #9356dc;
-$secondary-color: #ff79da;
-$light-secondary: scale-color($secondary-color, $lightness: 10%);
-$tertiary-color: #99e2d0;
-$bg-base: #fff;
-$bg-light: darken(#fff, 5%);
+$colors: (
+  base: #fff,
+  footerColor: scale-color(#000, $lightness: 20%),
+  primary: #9356dc,
+  secondary: #ff79da,
+  tertiary: #99e2d0,
+  light-primary: scale-color(#9356dc, $lightness: 85%),
+  light-secondary: scale-color(#ff79da, $lightness: 10%),
+  dark-tertiary: scale-color(#99e2d0, $lightness: -60%),
+  dark-base: scale-color(#fff, $lightness: -5%),
+  formColor: scale-color(#fff, $lightness: -10%),
+);
 
 /* ANIMATIONS */
 
 $duration: 1.2s;
-$offset: 187;
 
 /* BREAKPOINTS */
 
-$bp-tab: 768px;
-$bp-medium: 960px;
-$bp-desktop: 1200px;
+$bp: (
+  tab: 768px,
+  medium: 960px,
+  desktop: 1200px,
+);

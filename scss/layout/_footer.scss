@@ -2,8 +2,8 @@
 
 footer {
   padding: 1.5rem 1rem;
-  color: $bg-base;
-  background-color: lighten(#000, 20%);
+  color: map-get($colors, base);
+  background-color: map-get($colors, footerColor);
 
   li {
     margin-top: 0.5rem;

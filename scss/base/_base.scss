@@ -4,7 +4,7 @@ section {
   padding: 2rem 1rem 3rem;
 
   &:nth-of-type(2n + 1) {
-    background-color: $bg-light;
+    background-color: map-get($colors, dark-base);
   }
 }
 
@@ -43,7 +43,7 @@ main h3 {
     left: 0;
     width: 40px;
     height: 3px;
-    background-color: $tertiary-color;
+    background-color: map-get($colors, tertiary);
   }
 }
 

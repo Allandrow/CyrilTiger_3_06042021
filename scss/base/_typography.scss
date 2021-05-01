@@ -1,19 +1,17 @@
 @use '../abstracts/' as *;
 
 body {
-  font-family: $content-font, sans-serif;
+  font-family: map-get($font, content), sans-serif;
 }
 
 h1,
 footer h3 {
-  font-family: $title-font, sans-serif;
-  font-weight: 400;
+  @extend %titre-typography;
   text-transform: lowercase;
 }
 
 h2 {
-  font-family: $title-font, sans-serif;
-  font-weight: 400;
+  @extend %titre-typography;
   font-size: 1.75rem;
 
   p::first-letter {

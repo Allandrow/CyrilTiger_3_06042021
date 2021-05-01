@@ -12,15 +12,15 @@
     span {
       background-image: linear-gradient(
         to bottom right,
-        $light-secondary 5%,
-        $secondary-color 20%,
-        $primary-color 100%
+        map-get($colors, light-secondary) 5%,
+        map-get($colors, secondary) 20%,
+        map-get($colors, primary) 100%
       );
       background-size: 150%, 150%;
       background-position: bottom right;
       border-radius: 2rem;
       padding: 1rem;
-      color: $bg-base;
+      color: map-get($colors, base);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: background-position 300ms, box-shadow 300ms;
     }

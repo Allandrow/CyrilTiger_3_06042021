@@ -78,6 +78,12 @@ img {
   object-position: center;
 }
 
+h1,
+footer h3, h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+}
+
 @keyframes loaderDisplay {
   0% {
     opacity: 1;
@@ -177,14 +183,10 @@ body {
 
 h1,
 footer h3 {
-  font-family: "Shrikhand", sans-serif;
-  font-weight: 400;
   text-transform: lowercase;
 }
 
 h2 {
-  font-family: "Shrikhand", sans-serif;
-  font-weight: 400;
   font-size: 1.75rem;
 }
 h2 p::first-letter {
@@ -451,7 +453,7 @@ footer a:hover span {
   padding-left: 1rem;
 }
 .card-group--numbered-list .card:last-of-type {
-  background-color: #f2eafb;
+  background-color: #efe6fa;
 }
 .card-group--numbered-list .card:last-of-type i {
   color: #9356dc;
@@ -479,7 +481,7 @@ footer a:hover span {
   right: 0.75rem;
   background-color: #99e2d0;
   padding: 0.5rem 0.75rem;
-  color: #278870;
+  color: #227661;
   font-weight: 700;
   border-radius: 2px;
 }

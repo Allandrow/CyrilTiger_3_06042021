@@ -16,7 +16,7 @@
   &--hover {
     opacity: 0;
     transition: opacity 150ms ease-in-out;
-    background-image: linear-gradient(to bottom left, $primary-color, $secondary-color);
+    background-image: linear-gradient(to bottom left, map-get($colors, primary), map-get($colors, secondary));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
