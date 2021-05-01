@@ -277,7 +277,6 @@ main h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   overflow: hidden;
-  cursor: pointer;
 }
 .card:last-of-type {
   margin-bottom: 0;
@@ -527,6 +526,7 @@ footer a:hover span {
   justify-content: space-between;
 }
 .restaurant-menu .card {
+  cursor: pointer;
   animation: cardTranslationAnimation 250ms ease-out forwards;
   opacity: 0;
 }

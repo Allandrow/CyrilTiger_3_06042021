@@ -28,6 +28,8 @@
   }
 
   .card {
+    cursor: pointer;
+
     @include cardAnimationDelay();
     animation: cardTranslationAnimation 250ms ease-out forwards;
     opacity: 0;
