@@ -9,9 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loaderDisplay ($duration * 3) linear;
-  opacity: 0;
-  visibility: hidden;
+  animation: loaderDisplay ($duration * 3) linear forwards;
 
   &__spinner {
     width: 75px;

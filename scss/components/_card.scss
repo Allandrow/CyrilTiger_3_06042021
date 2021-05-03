@@ -35,17 +35,13 @@
       max-width: 80%;
 
       span {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        @extend %ellipsis;
       }
     }
 
     strong {
       font-weight: 900;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+      @extend %ellipsis;
 
       &::first-letter {
         text-transform: uppercase;

@@ -1,12 +1,13 @@
 @use 'vars' as *;
 
 @keyframes loaderDisplay {
-  0% {
+  95% {
     opacity: 1;
     visibility: visible;
   }
-  95% {
-    opacity: 1;
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 

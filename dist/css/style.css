@@ -84,13 +84,20 @@ footer h3, h2 {
   font-weight: 400;
 }
 
+.card__content__text span, .card__content strong {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 @keyframes loaderDisplay {
-  0% {
+  95% {
     opacity: 1;
     visibility: visible;
   }
-  95% {
-    opacity: 1;
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes loaderSpin {
@@ -207,9 +214,7 @@ main h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loaderDisplay 3.6s linear;
-  opacity: 0;
-  visibility: hidden;
+  animation: loaderDisplay 3.6s linear forwards;
 }
 .loader__spinner {
   width: 75px;
@@ -304,16 +309,8 @@ main h3 {
   justify-content: space-between;
   max-width: 80%;
 }
-.card__content__text span {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
 .card__content strong {
   font-weight: 900;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .card__content strong::first-letter {
   text-transform: uppercase;
