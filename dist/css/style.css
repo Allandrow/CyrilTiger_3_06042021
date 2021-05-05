@@ -184,7 +184,8 @@ main h3::after {
   padding: 1rem 0;
 }
 
-body {
+body,
+.home h2 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -198,6 +199,10 @@ h2 {
 }
 h2 p::first-letter {
   text-transform: uppercase;
+}
+
+.home h2 {
+  font-weight: 700;
 }
 
 main h3 {

@@ -1,6 +1,7 @@
 @use '../abstracts/' as *;
 
-body {
+body,
+.home h2 {
   font-family: map-get($font, content), sans-serif;
 }
 
@@ -17,6 +18,10 @@ h2 {
   p::first-letter {
     text-transform: uppercase;
   }
+}
+
+.home h2 {
+  font-weight: 700;
 }
 
 main h3 {
